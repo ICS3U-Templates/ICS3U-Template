@@ -37,6 +37,12 @@ then
     echo "README.md updated."
 elif [ "$FIRST_CHAR" = "#" ]
 then
+    cp ./.devcontainer/.bashrc ~/.bashrc
+    # install CPPLint
+    sudo pip3 install cpplint
+    # binary will be $(go env GOPATH)/bin/golangci-lint
+    curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
+    source ~/.bashrc 
     echo "Already changed."
 else
     echo "Not what it should be!"
