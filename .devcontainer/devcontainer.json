@@ -38,7 +38,6 @@
                 "terminal.integrated.copyOnSelection": true,
                 "terminal.integrated.fontSize": 20,
                 "terminal.integrated.rightClickBehavior": "copyPaste",
-                "window.menuBarVisibility": "classic",
                 "workbench.activityBar.visible": true,
                 "workbench.colorTheme": "GitHub Dark Default",
                 "workbench.iconTheme": "material-icon-theme",
