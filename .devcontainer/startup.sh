@@ -20,11 +20,6 @@ fi
 FIRST_CHAR=$(head -c 1 ./README.md)
 if [ "$FIRST_CHAR" = "[" ]
 then
-    cp ./.devcontainer/.bashrc ~/.bashrc
-    # install CPPLint
-    sudo pip3 install cpplint
-    # binary will be $(go env GOPATH)/bin/golangci-lint
-    curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
     ex -s -c 1m3 -c w -c q ./README.md
     sed -i "3G" ./README.md
     sed -i "s/<OWNER>/$GITHUB_REPO_OWNER/g" ./README.md
@@ -32,18 +27,20 @@ then
     git add -A
     git commit -m "updated the badges"
     git push origin main
-    # shellcheck disable=SC1090
-    source ~/.bashrc 
     echo "README.md updated."
 elif [ "$FIRST_CHAR" = "#" ]
 then
-    cp ./.devcontainer/.bashrc ~/.bashrc
-    # install CPPLint
-    sudo pip3 install cpplint
-    # binary will be $(go env GOPATH)/bin/golangci-lint
-    curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
-    source ~/.bashrc 
     echo "Already changed."
 else
     echo "Not what it should be!"
 fi
+
+# always run on new instance
+cp ./.devcontainer/.bashrc ~/.bashrc
+# install CPPLint
+sudo pip3 install cpplint
+# binary will be $(go env GOPATH)/bin/golangci-lint
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
+# shellcheck disable=SC1090
+source ~/.bashrc
+# git rebase command goes here
