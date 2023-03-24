@@ -43,4 +43,4 @@ sudo pip3 install cpplint
 curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
 # shellcheck disable=SC1090
 source ~/.bashrc
-# git rebase command goes here
+git config pull.rebase false
