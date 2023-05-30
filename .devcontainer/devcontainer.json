@@ -1,5 +1,5 @@
 {
-    "name": "Mr Coxall - Codespace Image",
+    "name": "Mr Coxall - Codespace Container",
     "postCreateCommand": "bash ./.devcontainer/startup.sh",
     "customizations": {
         "vscode": {
