@@ -3,7 +3,6 @@
     "postCreateCommand": "bash ./.devcontainer/startup.sh",
     "customizations": {
         "vscode": {
-            // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
                 "GitHub.vscode-pull-request-github",
                 "esbenp.prettier-vscode",
