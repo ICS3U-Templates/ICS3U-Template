@@ -10,8 +10,12 @@
                 "oderwat.indent-rainbow",
                 "PKief.material-icon-theme",
                 "ms-python.python",
-                "ms-vscode.cpptools-themes",
-                "sohamkamani.code-eol"
+                "ms-vscode.cpptools",
+                "sohamkamani.code-eol",
+                "GitHub.copilot",
+                "ritwickdey.LiveServer",
+                "ms-python.pylint",
+                "golang.go"
             ],
             "settings": {
                 "editor.autoClosingQuotes": "always",
