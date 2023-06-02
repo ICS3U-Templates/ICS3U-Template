@@ -1,6 +1,6 @@
 {
     "name": "Mr Coxall - Codespace Container",
-    "postCreateCommand": "bash ./.devcontainer/startup.sh",
+    "postCreateCommand": "bash -i ./.devcontainer/startup.sh",
     "customizations": {
         "vscode": {
             "extensions": [
