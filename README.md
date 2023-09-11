@@ -7,6 +7,15 @@
 ---
 
 **REMEMBER:**
+- to run your python program
+```console
+  python main.py
+```
+- to compile and run your C program
+```console
+  gcc ./Main.c -o ./ Main.app
+  ./Main.app
+```
 - ensure you commit your code after every major change, to keep your history and not loose anything
 ```console
   git add -A
