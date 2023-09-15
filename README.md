@@ -6,16 +6,28 @@
 
 ---
 
-**REMEMBER:**
-- to run your python program
+**Python**
+- to interpret your python program
 ```console
   python main.py
 ```
-- to compile and run your C program
+- to run black to lint your python code
+```console
+  black --check --diff ./*.py
+```
+
+**C**
+- to compile and run your python program
 ```console
   gcc ./Main.c -o ./ Main.app
   ./Main.app
 ```
+- to run cpplint to lint your C code
+```console
+  cpplint ./*.c
+```
+
+**GitHub**
 - ensure you commit your code after every major change, to keep your history and not loose anything
 ```console
   git add -A
