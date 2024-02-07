@@ -17,11 +17,16 @@
 ```
 
 **C**
-- to compile and run your python program
+- to compile and run your C program
 ```console
   gcc ./Main.c -o ./ Main.app
   ./Main.app
 ```
+- if you are using CS50's C Library then
+```console
+  gcc ./Main.c -o ./ Main.app -lcs50
+  ./Main.app
+``` 
 - to run cpplint to lint your C code
 ```console
   cpplint ./*.c

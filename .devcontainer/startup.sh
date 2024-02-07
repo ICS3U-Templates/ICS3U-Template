@@ -39,6 +39,9 @@ fi
 cp ./.devcontainer/.bashrc ~/.bashrc
 # install CPPLint
 sudo pip3 install cpplint
+# install CS50 C library
+sudo curl -s https://packagecloud.io/install/repositories/cs50/repo/script.deb.sh | sudo bash
+sudo apt install libcs50 -y
 # binary will be $(go env GOPATH)/bin/golangci-lint
 curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
 # shellcheck disable=SC1090
