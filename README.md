@@ -26,7 +26,7 @@
 ```console
   gcc ./Main.c -o ./ Main.app -lcs50
   ./Main.app
-``` 
+```
 - to run cpplint to lint your C code
 ```console
   cpplint ./*.c
