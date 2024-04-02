@@ -53,7 +53,7 @@
                 "terminal.integrated.mouseWheelZoom": true,
                 "terminal.integrated.rightClickBehavior": "copyPaste",
                 "window.menuBarVisibility": "classic",
-                "workbench.activityBar.visible": true,
+                "workbench.activityBar.location": "hidden",
                 "workbench.colorTheme": "GitHub Dark Default",
                 "workbench.iconTheme": "material-icon-theme",
                 "workbench.startupEditor": "none",
