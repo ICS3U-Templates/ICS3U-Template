@@ -32,6 +32,7 @@
                 "editor.mouseWheelZoom": true,
                 "editor.renderWhitespace": "all",
                 "editor.smoothScrolling": true,
+                "editor.stickyScroll.enabled": false,
                 "editor.tabSize": 4,
                 "explorer.confirmDragAndDrop": false,
                 "extensions.ignoreRecommendations": true,
